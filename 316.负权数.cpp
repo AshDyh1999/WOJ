@@ -8,7 +8,7 @@ void ten2n(int num, int scale){
 	int rest;
 	int render,count=0;
 	int ascii;
-	// char answer[1000];
+
 	while(1){
 		rest = num%scale;
 		render = num/scale;

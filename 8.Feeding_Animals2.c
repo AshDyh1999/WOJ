@@ -19,6 +19,7 @@ int main(int argc, char const *argv[])
 				cin>>relationship[i][j];
 			}
 		}
+		
 		cin >> k;
 		for (i = 0; i < num_person; ++i)
 		{
@@ -58,15 +59,21 @@ int main(int argc, char const *argv[])
 					flag2 = 1;
 				}
 			}
-			if(flag2 == 0){
+			if(flag2 == 0)
+			{
 				flag = 0;
-			}else{
+			}
+			else
+			{
 				feed_num[maxid] --;
 			}
 		}
-		if(flag == 1){
+		if(flag == 1)
+		{
 			cout<<"Yes"<<endl;
-		}else{
+		}
+		else
+		{
 			cout<<"No"<<endl;
 		}
 	}

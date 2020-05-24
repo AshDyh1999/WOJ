@@ -2,6 +2,7 @@
 #include <iostream>
 #include<string>
 using namespace std;
+
 string min_cost(string s){
 	string a = "", b = "";
 	int len, index;
@@ -60,6 +61,7 @@ string min_cost(string s){
 
 	return s;
 }
+
 int main() {
 	string s;
 	while(cin>>s) {

@@ -1,15 +1,21 @@
 //204.继续找相同
 #include <stdio.h>
 #include <string.h>
+#include <iostream>
+using namespace std;
+
 int num[500007];
+
 int main(int argc, char const *argv[])
 {
     int n, count, ans, sp;
-    while(scanf("%d", &n) != EOF){
+    while(cin >> n)
+    {
         sp = 0;
         for (int i = 0; i < n; ++i)
         {
-            scanf("%d", &num[i]);
+            cin >> num[i];
+
             if (sp == 0)
             {
                 sp++;
@@ -25,7 +31,7 @@ int main(int argc, char const *argv[])
         }
         if (sp > 0)
         {
-            printf("%d\n", ans);
+            cout << ans << endl;
         }else{
             int a = 0, b = 0, t = num[n-1];
             for (int i = 0; i < n; ++i)
@@ -40,9 +46,9 @@ int main(int argc, char const *argv[])
             }
             if (a > b)
             {
-                printf("%d\n", ans);
+                cout << ans << endl;
             }else{
-                printf("%d\n", t);
+                cout << t << endl;
             }
         }        
     }

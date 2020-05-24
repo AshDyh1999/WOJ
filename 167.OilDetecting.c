@@ -1,5 +1,6 @@
 //167. Oil Detecting
-#include<stdio.h>
+#include <stdio.h>
+#include <stdlib.h>
 
 char arr[100][100];
 int length, width;
@@ -17,10 +18,14 @@ void sarch(int i, int j){
 	        sarch(i-1,j);
 	        sarch(i-1,j-1);
 	        sarch(i-1,j+1);			
-		}else{
+		}
+		else
+		{
 			return;
 		}
-	}else{
+	}
+	else
+	{
 		return;
 	}
 }
@@ -38,14 +43,7 @@ int main(int argc, char const *argv[])
 		{
 			scanf("%s", &arr[i]);				
 		}
-		// for (int i = 0; i < length; ++i)
-		// {
-		// 	for (int j = 0; j < width; ++j)
-		// 	{
-		// 		printf("%c", arr[i][j]);
-		// 	}
-		// 	printf("\n");
-		// }
+
 		for (int i = 0; i < length; ++i)
 		{
 			for (int j = 0; j < width; ++j)
